@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url("{% static 'images/background.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        a {
+            text-decoration: underline;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <center><h1>Welcome HR TEAM </h1><br><br>
+        <h2>This Project is actually login Authentication</h2>
+    </center>
+    <br><br>
+    
+    
+    <center><button><h3><a href="{% url 'logout' %}">Logout</a></h3></button></center>
+</body>
+</html>
